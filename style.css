@@ -103,3 +103,201 @@ header{
         rgba(0,0,0,.75)
     );
 }
+.hero{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:5;
+    width:90%;
+}
+
+.logo{
+    width:180px;
+    margin:auto;
+    margin-bottom:25px;
+    border-radius:50%;
+    box-shadow:0 0 35px rgba(212,175,55,.45);
+}
+
+.hero h1{
+    font-family:'Cinzel',serif;
+    color:#D4AF37;
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+.slogan{
+    font-size:24px;
+    color:white;
+    margin-bottom:40px;
+}
+
+.botones{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    background:#D4AF37;
+    color:#000;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(212,175,55,.6);
+}
+
+.btn-secundario{
+    background:transparent;
+    color:#D4AF37;
+    border:2px solid #D4AF37;
+}
+
+.btn-secundario:hover{
+    background:#D4AF37;
+    color:#000;
+}
+
+/* CONTENEDORES */
+
+.contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:100px 0;
+}
+
+.contenedor h2{
+    text-align:center;
+    font-family:'Cinzel',serif;
+    color:#D4AF37;
+    font-size:42px;
+    margin-bottom:35px;
+}
+
+.contenedor p{
+    text-align:center;
+    font-size:20px;
+}
+
+/* TARJETAS */
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:45px;
+}
+
+.card{
+    background:#111;
+    width:300px;
+    padding:35px;
+    border:1px solid rgba(212,175,55,.35);
+    border-radius:20px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(212,175,55,.35);
+}
+
+.icono{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.card p{
+    text-align:left;
+    font-size:16px;
+}
+
+/* CONTACTO */
+
+#contacto a{
+    color:#D4AF37;
+    font-weight:bold;
+}
+
+#contacto a:hover{
+    color:white;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:70px;
+    height:70px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:35px;
+    color:white;
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+
+footer{
+    background:#0b0b0b;
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid rgba(212,175,55,.25);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+    flex-direction:column;
+    gap:20px;
+}
+
+.navbar ul{
+    gap:18px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.logo{
+    width:130px;
+}
+
+.slogan{
+    font-size:18px;
+}
+
+.banner{
+    height:100vh;
+}
+
+}
