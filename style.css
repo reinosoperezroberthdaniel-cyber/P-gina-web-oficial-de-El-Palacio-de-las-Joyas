@@ -1,266 +1,53 @@
-/* ===== RESET ===== */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#050505;
-    color:#fff;
-    font-family:'Poppins',sans-serif;
-}
-
-a{
-    text-decoration:none;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-/* ===== NAVBAR ===== */
-
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:#000;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    z-index:1000;
-    border-bottom:1px solid #D4AF37;
-}
-
-.marca{
-    display:flex;
-    align-items:center;
-    gap:15px;
-}
-
-.marca img{
-    width:55px;
-    border-radius:50%;
-}
-
-.marca span{
-    color:#D4AF37;
-    font-family:'Cinzel',serif;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.navbar ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
-
-.navbar ul li a{
-    color:white;
-    font-size:18px;
-    transition:.3s;
-}
-
-.navbar ul li a:hover{
-    color:#D4AF37;
-}
-
-/* ===== BANNER ===== */
-
-header{
-    margin-top:90px;
-}
-
-.banner{
-    width:100%;
-    height:500px;
-    object-fit:cover;
-}
-
-/* ===== PRESENTACIÓN ===== */
-
-.presentacion{
-    text-align:center;
-    padding:80px 20px;
-}
-
-.logo-grande{
-    width:220px;
-    margin:auto;
-    border-radius:50%;
-    box-shadow:0 0 25px rgba(212,175,55,.5);
-    margin-bottom:25px;
-}
-
-.presentacion h1{
-    font-family:'Cinzel',serif;
-    color:#D4AF37;
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-.presentacion p{
-    font-size:22px;
-    margin-bottom:35px;
-}
-
-/* ===== BOTONES ===== */
-
-.botones{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    background:#D4AF37;
-    color:black;
-    padding:15px 35px;
-    border-radius:40px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:white;
-    transform:translateY(-5px);
-}
-
-.btn-secundario{
-    background:transparent;
-    color:#D4AF37;
-    border:2px solid #D4AF37;
-}
-
-.btn-secundario:hover{
-    background:#D4AF37;
-    color:black;
-}
-
-/* ===== CONTENIDO ===== */
-
-.contenedor{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:80px 0;
-}
-
-.contenedor h2{
-    text-align:center;
-    color:#D4AF37;
-    font-family:'Cinzel',serif;
-    font-size:42px;
-    margin-bottom:30px;
-}
-
-.contenedor p{
-    text-align:center;
-    font-size:20px;
-    line-height:1.8;
-}
-
-/* ===== TARJETAS ===== */
-
-.cards{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-    margin-top:40px;
-}
-
-.card{
-    width:300px;
-    background:#111;
-    padding:35px;
-    border-radius:20px;
-    border:1px solid #D4AF37;
-    text-align:center;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(212,175,55,.5);
-}
-
-.icono{
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-.card h3{
-    color:#D4AF37;
-    margin-bottom:15px;
-}
-
-/* ===== CONTACTO ===== */
-
-#contacto a{
-    color:#D4AF37;
-    font-weight:bold;
-}
-
-/* ===== BOTÓN WHATSAPP ===== */
-
-.whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:70px;
-    height:70px;
-    background:#25D366;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    font-size:34px;
-}
-
-/* ===== FOOTER ===== */
-
-footer{
-    text-align:center;
-    background:#111;
-    padding:30px;
-    color:#888;
-}
-
-/* ===== CELULAR ===== */
-
+/* El Palacio de las Joyas - style.css */
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:#050505;color:#eee;line-height:1.6}
+a{text-decoration:none}
+img{display:block;max-width:100%}
+header{position:relative;min-height:100vh;overflow:hidden}
+.banner{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.28)}
+.overlay{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75));z-index:1}
+.navbar{position:fixed;top:0;left:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 8%;background:rgba(0,0,0,.6);backdrop-filter:blur(10px);z-index:1000;border-bottom:1px solid rgba(212,175,55,.2)}
+.logo-nav{display:flex;align-items:center;gap:15px}
+.logo-nav img{width:56px}
+.logo-nav h2{font:700 1.2rem Cinzel,serif;color:#D4AF37}
+.menu{display:flex;gap:35px;list-style:none}
+.menu a{color:#fff;font-weight:500;transition:.3s}
+.menu a:hover{color:#D4AF37}
+.hero{position:relative;z-index:2;min-height:100vh;padding:120px 8% 60px;display:flex;align-items:center;justify-content:space-between;gap:60px}
+.hero-info{max-width:600px}
+.hero-info h1{font:700 4rem Cinzel,serif;color:#D4AF37;margin-bottom:20px}
+.hero-info p{font-size:1.4rem;margin-bottom:35px}
+.hero-logo img{width:340px;filter:drop-shadow(0 0 20px rgba(212,175,55,.35))}
+.hero-botones{display:flex;gap:18px;flex-wrap:wrap}
+.btn{background:#D4AF37;color:#000;padding:15px 34px;border-radius:40px;font-weight:700;transition:.3s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 0 20px rgba(212,175,55,.5)}
+.btn2{background:transparent;color:#D4AF37;border:2px solid #D4AF37}
+.btn2:hover{background:#D4AF37;color:#000}
+.contenedor{width:min(1100px,90%);margin:auto;padding:90px 0}
+.contenedor h2{text-align:center;color:#D4AF37;font:700 2.4rem Cinzel,serif;margin-bottom:25px}
+.contenedor>p{text-align:center;font-size:1.1rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;margin-top:40px}
+.card{background:#111;border:1px solid rgba(212,175,55,.25);padding:35px;border-radius:18px;transition:.3s}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 24px rgba(212,175,55,.25)}
+.icono{font-size:3rem;margin-bottom:15px}
+.card h3{color:#D4AF37;margin-bottom:10px}
+.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.galeria img{height:260px;width:100%;object-fit:cover;border-radius:16px;transition:.35s}
+.galeria img:hover{transform:scale(1.04)}
+.contacto{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;text-align:center}
+.contacto h3{color:#D4AF37;margin-bottom:8px}
+.contacto a{color:#fff}
+.contacto a:hover{color:#D4AF37}
+.whatsapp{position:fixed;right:24px;bottom:24px;width:68px;height:68px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;z-index:999;text-decoration:none}
+footer{background:#0b0b0b;border-top:1px solid rgba(212,175,55,.2);text-align:center;padding:40px 20px}
+footer img{width:90px;margin:0 auto 15px}
+footer h3{color:#D4AF37;font-family:Cinzel,serif;margin-bottom:8px}
 @media(max-width:900px){
-
-.navbar{
-    flex-direction:column;
-    gap:15px;
-}
-
-.navbar ul{
-    gap:18px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.banner{
-    height:250px;
-}
-
-.presentacion h1{
-    font-size:36px;
-}
-
-.logo-grande{
-    width:150px;
-}
-
+.navbar{flex-direction:column;gap:15px}
+.menu{gap:18px;flex-wrap:wrap;justify-content:center}
+.hero{flex-direction:column-reverse;text-align:center}
+.hero-logo img{width:220px}
+.hero-info h1{font-size:2.6rem}
+.hero-info p{font-size:1.1rem}
+.hero-botones{justify-content:center}
 }
